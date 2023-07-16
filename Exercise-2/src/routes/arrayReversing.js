@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
-const sumController = require("../controllers/sum");
+const arrayReversingController = require("../controllers/arrayReversing");
 
-router.get("/sum-of-two-numbers", sumController.getSum);
+router.get("/reverse-an-array/:array", arrayReversingController.reverseArray);
 
 module.exports = router;
